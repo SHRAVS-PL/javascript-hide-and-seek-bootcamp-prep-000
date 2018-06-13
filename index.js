@@ -1,4 +1,4 @@
-function getFirstSelector(selector) {
+ function getFirstSelector(selector) {
   var sel = document.querySelector(selector)
   return sel
 }
@@ -15,12 +15,6 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
- var ele = document.querySelectorAll('grand-node')
-  var a;
-  for(var i = 0; i < ele.length ; i++) {
- if(i== ele.length - 1) {
-    a = ele[i]
-   }
-  }
-  return a
+ var ele = document.getElementById('grand-node').outerText
+ return ele
 }
