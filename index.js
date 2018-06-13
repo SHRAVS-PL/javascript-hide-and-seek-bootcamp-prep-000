@@ -15,7 +15,7 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
- var ele = document.getElementById('nested').innerHTML
+ var ele = document.getElementById('nested').children.children
   var a;
   for(var i = 0; i < ele.length ; i++) {
    if(i== ele.length - 1) {
